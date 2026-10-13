@@ -20,4 +20,15 @@ describe('Navbar', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show all RxJS routes in the dropdown', () => {
+    const toggle = fixture.nativeElement.querySelector('button.dropdown-toggle') as HTMLButtonElement;
+    toggle.click();
+    fixture.detectChanges();
+
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    expect(Array.from(fixture.nativeElement.querySelectorAll<HTMLAnchorElement>('.dropdown-item'))
+      .map((link) => link.textContent.trim()))
+      .toEqual(['forkJoin', 'switchMap', 'mergeMap', 'concatMap', 'exhaustMap']);
+  });
 });
