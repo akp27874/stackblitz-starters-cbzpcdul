@@ -25,6 +25,9 @@
             RxJS
           </button>
           <ul class="dropdown-menu" [class.show]="isRxjsDropdownOpen">
+            <li><a class="dropdown-item" routerLink="of" (click)="isRxjsDropdownOpen = false">of</a></li>
+            <li><a class="dropdown-item" routerLink="from" (click)="isRxjsDropdownOpen = false">from</a></li>
+            <li><a class="dropdown-item" routerLink="map" (click)="isRxjsDropdownOpen = false">map</a></li>
             <li><a class="dropdown-item" routerLink="forkjoin" (click)="isRxjsDropdownOpen = false">forkJoin</a></li>
             <li><a class="dropdown-item" routerLink="switchmap" (click)="isRxjsDropdownOpen = false">switchMap</a></li>
             <li><a class="dropdown-item" routerLink="mergemap" (click)="isRxjsDropdownOpen = false">mergeMap</a></li>
