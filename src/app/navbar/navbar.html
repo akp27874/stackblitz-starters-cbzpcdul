@@ -30,6 +30,22 @@
             <li><a class="dropdown-item" routerLink="mergemap" (click)="isRxjsDropdownOpen = false">mergeMap</a></li>
             <li><a class="dropdown-item" routerLink="concatmap" (click)="isRxjsDropdownOpen = false">concatMap</a></li>
             <li><a class="dropdown-item" routerLink="exhaustmap" (click)="isRxjsDropdownOpen = false">exhaustMap</a></li>
+            <li><a class="dropdown-item" routerLink="combinelatest" (click)="isRxjsDropdownOpen = false">combineLatest</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle"
+            type="button"
+            aria-haspopup="true"
+            [attr.aria-expanded]="isConceptDropdownOpen"
+            (click)="isConceptDropdownOpen = !isConceptDropdownOpen"
+          >
+            Concepts
+          </button>
+          <ul class="dropdown-menu" [class.show]="isConceptDropdownOpen">
+            <li><a class="dropdown-item" routerLink="observablevspromise" (click)="isConceptDropdownOpen = false">Observable vs Promise</a></li>
+            
           </ul>
         </li>
       </ul>
