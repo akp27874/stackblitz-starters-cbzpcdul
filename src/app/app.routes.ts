@@ -6,6 +6,7 @@ import { ConcatMap } from './rxjs/concat-map/concat-map';
 import { ExhaustMap } from './rxjs/exhaust-map/exhaust-map';
 import { CombineLatest } from './rxjs/combine-latest/combine-latest';
 import { ObservableVsPromise } from './concepts/observable-vs-promise/observable-vs-promise';
+import { SubjectVsReplaysubjectVsBehavioursubject } from './concepts/subject-vs-replaysubject-vs-behavioursubject/subject-vs-replaysubject-vs-behavioursubject'
 
 export const routes: Routes = [
   { path: '', component: ForkJoin, pathMatch: 'full' },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: 'concatmap', component: ConcatMap },
   { path: 'exhaustmap', component: ExhaustMap },
   { path: 'combinelatest', component: CombineLatest },
-  { path: 'observablevspromise', component: ObservableVsPromise}
+  { path: 'observablevspromise', component: ObservableVsPromise},
+  { path: 'subjectvsreplayvsbehaviour', component: SubjectVsReplaysubjectVsBehavioursubject}
 ];
 

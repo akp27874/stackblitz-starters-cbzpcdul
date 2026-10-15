@@ -1,0 +1,9 @@
+<p>subject-vs-replaysubject-vs-behavioursubject works!</p>
+
+<button class="btn btn-outline-primary mr-5" (click)="onCreate()">Create</button> |
+<button class="btn btn-outline-secondary mr-5" (click)="onSubscribe()">Subscribe</button> 
+<ul class="list-group mt-5">
+    @for(item of myData(); track item) {
+        <li class="list-group-item">{{item}}</li>
+    }
+</ul>
