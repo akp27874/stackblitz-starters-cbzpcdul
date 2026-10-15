@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { Of } from './rxjs/of/of';
 import { From } from './rxjs/from/from';
+import { Pipe } from './rxjs/pipe/pipe';
+import { Filter } from './rxjs/filter/filter';
 import { Map } from './rxjs/map/map';
 import { ForkJoin } from './rxjs/fork-join/fork-join';
 import { SwitchMap } from './rxjs/switch-map/switch-map';
@@ -15,6 +17,8 @@ export const routes: Routes = [
   { path: '', component: Map, pathMatch: 'full' },
   { path: 'of', component: Of },
   { path: 'from', component: From },
+  { path: 'pipe', component: Pipe },
+  { path: 'filter', component: Filter },
   { path: 'map', component: Map },
   { path: 'forkjoin', component: ForkJoin },
   { path: 'switchmap', component: SwitchMap },

@@ -1,0 +1,6 @@
+<p>pipe works!</p>
+<hr>
+<p>The pipe operator in RxJS is a method used to chain multiple transformation operators together on an observable stream. Think of it as an assembly line: your raw data enters the pipe, flows sequentially through various tools (like filter, map, or tap), and exits fully transformed.</p>
+  <p>
+      Prior to RxJS 6, operators were chained directly via dot-notation (e.g., source.map().filter()). The pipe method was introduced to make operators functional, allowing for better tree-shaking (removing unused code during build) and making it easy to create custom operators.
+  </p>  
